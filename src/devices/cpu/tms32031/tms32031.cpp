@@ -564,6 +564,14 @@ void tms3203x_device::device_start()
 	state_add(TMS3203X_R5,      "R5",        m_r[TMR_R5].i32[0]);
 	state_add(TMS3203X_R6,      "R6",        m_r[TMR_R6].i32[0]);
 	state_add(TMS3203X_R7,      "R7",        m_r[TMR_R7].i32[0]);
+	state_add(TMS3203X_R0E,      "R0E",        m_r[TMR_R0].i32[1]);
+	state_add(TMS3203X_R1E,      "R1E",        m_r[TMR_R1].i32[1]);
+	state_add(TMS3203X_R2E,      "R2E",        m_r[TMR_R2].i32[1]);
+	state_add(TMS3203X_R3E,      "R3E",        m_r[TMR_R3].i32[1]);
+	state_add(TMS3203X_R4E,      "R4E",        m_r[TMR_R4].i32[1]);
+	state_add(TMS3203X_R5E,      "R5E",        m_r[TMR_R5].i32[1]);
+	state_add(TMS3203X_R6E,      "R6E",        m_r[TMR_R6].i32[1]);
+	state_add(TMS3203X_R7E,      "R7E",        m_r[TMR_R7].i32[1]);
 	state_add(TMS3203X_R0F,     "R0F",       m_iotemp).callimport().callexport().formatstr("%12s");
 	state_add(TMS3203X_R1F,     "R1F",       m_iotemp).callimport().callexport().formatstr("%12s");
 	state_add(TMS3203X_R2F,     "R2F",       m_iotemp).callimport().callexport().formatstr("%12s");
